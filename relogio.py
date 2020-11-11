@@ -1,3 +1,6 @@
+MIN = 1
+SEG = 1
+HORA = 1
 class Relogio:
     def __init__(self,hora,minuto,segundo):
         self.__hora = hora
@@ -24,13 +27,13 @@ class Relogio:
                 if self.__hora >=11:
                     self.__hora = 00
                 else:
-                    self.__hora = self.__hora +1
+                    self.__hora = self.__hora +HORA
 
             else:
-                self.__minuto = self.__minuto + 1
+                self.__minuto = self.__minuto + MIN
 
         elif self.__segundo < 59:
-            self.__segundo = self.__segundo + 1
+            self.__segundo = self.__segundo + SEG
 
 
 
