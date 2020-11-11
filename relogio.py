@@ -29,7 +29,7 @@ class Relogio:
             else:
                 self.__minuto = self.__minuto + 1
 
-        elif self.__segundo < 60:
+        elif self.__segundo < 59:
             self.__segundo = self.__segundo + 1
 
 
